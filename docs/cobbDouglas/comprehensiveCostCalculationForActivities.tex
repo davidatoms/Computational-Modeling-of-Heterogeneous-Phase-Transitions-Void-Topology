@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+\title{Cost Analysis of AI Augmentation vs. Manual Work}
+\author{David Adams}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This analysis compares the total cost of producing 1,000 units with and without AI augmentation, accounting for direct costs, defect costs, and rework costs.
+
+\section{Assumptions}
+\begin{table}[h]
+\centering
+\caption{Input Parameters for 1,000 Units}
+\label{table:params}
+\begin{tabular}{lcc}
+\toprule
+Parameter                     & With AI & Without AI \\
+\midrule
+Labor Cost per Unit (\$)      & 8       & 10         \\
+AI Tool Cost per Unit (\$)    & 1       & 0          \\
+Defects (Low/Medium/High)     & 30/40/15 & 20/30/10   \\
+Rework Cases                  & 50      & 17         \\
+Cost per Defect (Low) (\$)    & 10      & 10         \\
+Cost per Defect (Medium) (\$) & 50      & 50         \\
+Cost per Defect (High) (\$)   & 200     & 200        \\
+Rework Cost per Case (\$)     & 100     & 100        \\
+Time Lost per Rework (hours)  & 2       & 2          \\
+Labor Rate (\$/hour)          & 25      & 25         \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Cost Calculations}
+\subsection{Direct Costs}
+\begin{align*}
+\text{With AI:} & \quad \$8,000 (\text{Labor}) + \$1,000 (\text{AI}) = \boxed{\$9,000} \\
+\text{Without AI:} & \quad \$10,000 (\text{Labor}) = \boxed{\$10,000}
+\end{align*}
+
+\subsection{Defect Costs}
+\begin{align*}
+\text{With AI:} & \quad (30 \times 10) + (40 \times 50) + (15 \times 200) = \boxed{\$5,300} \\
+\text{Without AI:} & \quad (20 \times 10) + (30 \times 50) + (10 \times 200) = \boxed{\$3,700}
+\end{align*}
+
+\subsection{Rework Costs}
+\begin{align*}
+\text{With AI:} & \quad (50 \times 2 \times 25) + (50 \times 100) = \boxed{\$7,500} \\
+\text{Without AI:} & \quad (17 \times 2 \times 25) + (17 \times 100) = \boxed{\$2,550}
+\end{align*}
+
+\subsection{Total Cost}
+\begin{align*}
+\text{With AI:} & \quad \$9,000 + \$5,300 + \$7,500 = \boxed{\$21,800} \\
+\text{Without AI:} & \quad \$10,000 + \$3,700 + \$2,550 = \boxed{\$16,250} \\
+\text{Net Difference:} & \quad \boxed{\$5,550} \text{ (AI is more expensive)}
+\end{align*}
+
+\section{Conclusion}
+In this scenario, AI augmentation **increases total costs by \$5,550 per 1,000 units** due to higher defect and rework costs. Companies should carefully evaluate AI tools and workflows to ensure they deliver net benefits.
+
+\end{document}

@@ -1,0 +1,5 @@
+What This Does:
+
+Filters voxels: Only saves voxels where z ≈ 0 (front face).
+Saves coordinates: Exports the (x, y, z) coordinates of the visible voxels and their colors.
+Saves edges: Exports the coordinates of the edges of the front face.

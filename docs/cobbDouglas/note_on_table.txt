@@ -1,0 +1,4 @@
+True Positive (TP): Labor and capital are combined successfully, creating value (e.g., a well-trained worker using the right machine).
+False Positive (FP): Labor and capital are combined, but no value is created (e.g., a worker misusing a machine).
+False Negative (FN): Labor and capital could have created value but weren’t combined (e.g., idle workers or machines).
+True Negative (TN): Labor and capital correctly weren’t combined (e.g., avoiding a bad project).

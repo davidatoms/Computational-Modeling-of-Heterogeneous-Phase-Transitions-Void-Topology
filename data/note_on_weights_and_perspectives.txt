@@ -1,0 +1,1 @@
+something interesting when I changed perspective with the camera parameter was the way my computer worked harder to draw the same lines although nothing had been appearing on screen. The computer's memory was writing the other files to a 2 dimensional graph even though I wouldn't see those. I imagine this would incrase the weight of memory that file has in the folder.
